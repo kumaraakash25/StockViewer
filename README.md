@@ -3,8 +3,12 @@
 It is a plain springboot application. 
 Upon initialization it exposes some REST endpoints with sample stock data, open for viewing/creating/updating the stocks.
 
+To ease testing swagger UI has been added that can be accessed at 
+http://localhost:8080/swagger-ui.html 
+so that the calls to the endpoints can be made easily 
+
 To view all the stocks available in the memory, use the URL below with a GET method type
-http://localhost:8090/api/stocks/
+http://localhost:8080/api/stocks/
 {
    {
         "id": 1,
@@ -21,7 +25,7 @@ http://localhost:8090/api/stocks/
 }
 
 To view a particular stock by Id, use the below GET URL 
-http://localhost:8090/api/stocks/4 -> 4 is the stockId
+http://localhost:8080/api/stocks/4 -> 4 is the stockId
 Sample response 
 {
     "id": 4,
@@ -31,7 +35,7 @@ Sample response
 }
 
 To create a new stock, use a POST request with the Stock object in the body 
-http://localhost:8090/api/stocks/
+http://localhost:8080/api/stocks/
 Sample body to create new entry 
 {
     "name": "Satyam",
@@ -40,7 +44,7 @@ Sample body to create new entry
 }
 
 To update an existing object use the given URL with PUT method type
-http://localhost:8090/api/stocks/5 -> 5 is the stock id 
+http://localhost:8080/api/stocks/5 -> 5 is the stock id 
 Sample body 
 {
     "name": "Satyam29",
@@ -49,3 +53,4 @@ Sample body
 }
 
 Each input request is validated and correspnding response is sent 
+
