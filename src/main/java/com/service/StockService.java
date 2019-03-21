@@ -18,8 +18,12 @@ public class StockService {
 
     private static final Logger LOG = LoggerFactory.getLogger(StockService.class);
 
-    @Autowired
     private StockRepository repository;
+
+    @Autowired
+    StockService(StockRepository repository){
+        this.repository = repository;
+    }
 
     @PostConstruct
     public void initializeWithDummyData() {
