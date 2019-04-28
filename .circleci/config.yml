@@ -7,6 +7,5 @@ jobs:
     steps:
       - checkout
       - run: echo "Checked out the project"
-      - run: gradle run
       - run: gradle test
       - run: echo "Build Complete"
