@@ -54,3 +54,5 @@ Sample body
 
 Each input request is validated and correspnding response is sent 
 
+The project is build on circleCI where all the unit tests are run.Added a circle configuration file.
+
